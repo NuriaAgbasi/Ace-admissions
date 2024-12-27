@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Widget</title>
+    <style>
+        /* Fixed button styling */
+        .whatsapp-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .whatsapp-chat img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .whatsapp-chat:hover {
+            background-color: #20b358;
+        }
+    </style>
+</head>
+<body>
+    <a 
+        class="whatsapp-chat" 
+        href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi, I need assistance!" 
+        target="_blank"
+        aria-label="Chat with us on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+    </a>
+</body>
+</html>
