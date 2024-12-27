@@ -1680,7 +1680,7 @@ a:focus, .button:focus, button:focus, .btn:focus {
 }
 
 .breadcrumb_part {
-  background-image: url("img/breadcrumb_bg_1.png");
+  background-image: url("img/nicola-styles-WrIqO6X51Hs-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1689,6 +1689,18 @@ a:focus, .button:focus, button:focus, .btn:focus {
   align-items: center;
   height: 450px;
 }
+
+.breadcrumb_part::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity (0.3) to control darkness */
+  z-index: 1;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
   .breadcrumb_part {
     height: 350px;
